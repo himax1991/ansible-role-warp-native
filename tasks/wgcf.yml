@@ -22,11 +22,14 @@
 
 - name: Download wgcf binary
   ansible.builtin.get_url:
-    url: >-
-      https://github.com/ViRb3/wgcf/releases/download/{{ warp_native_wgcf_ver_tag }}/
-      wgcf_{{ warp_native_wgcf_ver_tag | regex_replace('^v', '') }}_{{ warp_native_wgcf_arch }}
+    url: https://github.com/ViRb3/wgcf/releases/download/{{ warp_native_wgcf_ver_tag }}/wgcf_{{ warp_native_wgcf_ver_tag | regex_replace('^v', '') }}_{{ warp_native_wgcf_arch }}
     dest: "{{ warp_native_wgcf_install_path }}"
     mode: "0755"
+
+- name: Install pexpect
+  ansible.builtin.pip:
+    name: pexpect
+    break_system_packages: true
 
 - name: Register wgcf account
   ansible.builtin.expect:
