@@ -1,6 +1,6 @@
 # Ansible Role: Cloudflare WARP Native
 
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-themelbine.warp__native-blue.svg)](https://galaxy.ansible.com/themelbine/warp_native)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-himax1991.warp__native-blue.svg)](https://galaxy.ansible.com/himax1991/warp_native)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
 An Ansible role that installs and configures Cloudflare WARP using wgcf and WireGuard. It sets up the network interface and verifies handshake connectivity. Supports two states: `present` and `absent`.
@@ -59,7 +59,7 @@ An Ansible role that installs and configures Cloudflare WARP using wgcf and Wire
 ## Installation
 
 ```bash
-ansible-galaxy install themelbine.warp_native
+ansible-galaxy install himax1991.warp_native
 ```
 
 ## Example Usage
@@ -70,7 +70,7 @@ ansible-galaxy install themelbine.warp_native
 - hosts: warp_servers
   become: yes
   roles:
-    - themelbine.warp_native
+    - himax1991.warp_native
 ```
 
 ### Group variables
@@ -100,4 +100,4 @@ MIT
 
 ## Author Information
 
-This role was created by [Melbine](https://github.com/themelbine).
+This role was created by [Melbine](https://github.com/himax1991).

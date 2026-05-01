@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: warp_native
-  author: themelbine
+  author: himax1991
   description: Installs and configures Cloudflare WARP using wgcf and WireGuard
   company: ""
   license: MIT
